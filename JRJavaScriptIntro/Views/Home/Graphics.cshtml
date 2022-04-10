@@ -1,0 +1,21 @@
+﻿@{
+   ViewData["Title"] = "Graphics";
+}
+
+<h2>@ViewData["Title"]</h2>
+<div>
+   Width:
+   <input type="range" name="rangeWidth" min="10" max="800"
+          id="rangeWidth" />
+   <input type="number" id="rangeWidthDisplay" readonly disabled />
+   Height:
+   <input type="range" name="rangeHeight" min="10" max="400"
+          id="rangeHeight" />
+   <input type="number" id="rangeHeightDisplay" readonly disabled />
+</div>
+
+<canvas id="drawingArea" width="800" height="400" style="border:1px solid #000000;"></canvas>
+
+@section Scripts{
+   <script src="~/js/homeGraphics.js"></script>
+}
